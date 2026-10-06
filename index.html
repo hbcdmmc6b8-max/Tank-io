@@ -1,9 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#07111c"><title>Tank.io</title><link rel="stylesheet" href="style.css?v=7"></head><body><main>
-<header><div class="brand"><b>TANK.IO</b><small id="mode">GARAGE</small></div><div class="stats"><span>🪙 <i id="coins">0</i></span><span>💎 <i id="gems">0</i></span><span>⭐ <i id="level">1</i></span></div></header>
-<section class="meters"><div><span>CORE</span><b id="hpText">100/100</b><i><em id="hpBar"></em></i></div><div><span>WAVE</span><b id="wave">0</b></div><div><span>SCORE</span><b id="score">0</b></div></section>
-<section id="arena"><canvas id="game"></canvas><div id="message">Build a connected war machine. Tap a part to rotate it.</div><div id="boss" hidden><span>BOSS</span><i><em id="bossBar"></em></i></div><div id="joystick" hidden><div></div></div></section>
-<section id="shop">
-<button data-part="armor"><strong>▣</strong><small>ARMOR</small><i>10</i></button><button data-part="gun"><strong>➤</strong><small>CANNON</small><i>25</i></button><button data-part="rapid"><strong>≡</strong><small>MINIGUN</small><i>45</i></button><button data-part="rocket"><strong>✦</strong><small>ROCKET</small><i>70</i></button><button data-part="wheel"><strong>●</strong><small>TRACK</small><i>12</i></button><button data-part="shield"><strong>⬡</strong><small>SHIELD</small><i>60</i></button><button data-part="repair"><strong>✚</strong><small>REPAIR</small><i>80</i></button><button data-part="core" class="selected"><strong>◆</strong><small>CORE</small><i>FREE</i></button>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#070b12"><title>Tank.io</title><link rel="stylesheet" href="style.css?v=8"></head><body><main>
+<header><div class="brand">TANK.IO <small>BUILD</small></div><div class="currency">● <b id="coins">150</b> ◆ <b id="gems">0</b> ★ <b id="level">1</b></div></header>
+<nav><button id="buildTab" class="active">BUILD</button><button id="shopTab">SHOP</button><button id="levelsTab">LEVELS</button></nav>
+<section id="buildScreen" class="screen activeScreen"><aside class="panel left"><h3>YOUR BOSS</h3><div>POWER <b id="power">0</b></div><div>HEALTH <b id="hpText">0</b></div><div>PARTS <b id="partCount">0</b></div><hr><small>Tap empty grid to place.<br>Tap a part to rotate.<br>Long press a part to sell.</small></aside>
+<section id="arena"><canvas id="game"></canvas><div id="message">BUILD YOUR MACHINE</div><div id="joystick" hidden><div></div></div></section>
+<aside class="panel right"><h2>FIGHT</h2><div class="enemyIcon">☼</div><b>THE SCRAPS</b><small>WAVE ARENA</small><button id="battle">FIGHT</button></aside>
 </section>
-<footer><button id="clear">RESET BUILD</button><button id="battle">⚔ DEPLOY</button></footer>
-</main><script src="game.js?v=7"></script></body></html>
+<section id="shopScreen" class="screen"><div class="window"><h2>SHOP</h2><p>Choose a module, then return to BUILD and place it.</p><div id="shop"></div></div></section>
+<section id="levelsScreen" class="screen"><div class="map"><h2>LEVELS</h2><div class="node done">1</div><i></i><div class="node">2</div><i></i><div class="node boss">3</div><div class="levelCard"><b>THE SCRAPS</b><small>Destroy enemies, earn scrap, improve your machine.</small><button id="playLevel">PLAY</button></div></div></section>
+<footer><div id="quickbar"></div><button id="reset">RESET</button></footer>
+</main><script src="game.js?v=8"></script></body></html>
