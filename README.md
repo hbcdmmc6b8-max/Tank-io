@@ -1,13 +1,17 @@
 # Tank.io
 
-Mobile-first modular tank builder prototype.
+Mobile-first modular tank-builder arena game.
 
-## Current prototype
-- Tap grid to place Core, Armor, Gun and Wheel modules
-- Start/end battles
-- Enemy waves home toward your tank
-- Guns auto-fire
-- HP and coin rewards
-- Responsive touch controls for iPhone
+## Version 2
+- Connected snap-grid building and weapon rotation
+- Core, armor, tracks, cannon, minigun, rockets, shield, repair modules
+- Touch drag movement during combat
+- Per-module HP and visible damage
+- Multiple weapon fire rates, damage values and rocket splash damage
+- Escalating enemy waves
+- Boss every 5 waves with boss health bar
+- Coins, gems, score and player level
+- Particle combat feedback
+- Mobile safe-area and responsive layout
 
-Open `index.html` or enable GitHub Pages from the main branch to play it online.
+Enable GitHub Pages on the main branch to play the web build.
